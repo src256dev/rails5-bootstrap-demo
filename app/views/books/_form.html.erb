@@ -1,0 +1,39 @@
+<%= form_for(book, html: {class: 'form-horizontal'}) do |f| %>
+  <% if book.errors.any? %>
+    <div id="error_explanation">
+      <h2>エラーが発生しました</h2>
+      <ul>
+      <% book.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label(:title, 'タイトル', class: 'col-xs-2 control-label') %>
+    <div class="col-xs-10">
+      <%= f.text_field(:title, class: 'form-control') %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label(:author, '著者', class: 'col-xs-2 control-label')  %>
+    <div class="col-xs-10">
+      <%= f.text_field(:author, class: 'form-control') %>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <%= f.label(:summary, '概容', class: 'col-xs-2 control-label') %>
+    <div class="col-xs-10">
+      <%= f.text_area(:summary, rows: 14, cols: 20, class: 'form-control') %>
+    </div>
+  </div>
+
+    <div class="form-group">
+      <div class="col-xs-12">
+        <%= f.submit('保存', class: 'btn btn-primary') %>
+      </div>
+    </div>
+<% end %>

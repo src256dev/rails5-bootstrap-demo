@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+sf1:
+  title: 宇宙の果て
+  author: SF太郎
+  summary: 宇宙の果てにいきつけるのか
+
+sf2:
+  title: 時間旅行
+  author: SF太郎
+  summary: 時間旅行できるのか
+
+ft1:
+  title: 魔法の国
+  author: ファンタジオ
+  summary: 魔法の国の王子様が
+
