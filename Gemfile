@@ -13,7 +13,7 @@ gem 'rails', '5.2.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', '~> 1.3.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'bootsnap', '>= 1.1.0', require: false
 # Use SCSS for stylesheets
 gem 'bootstrap-sass', '~> 3.3.6'
